@@ -9,7 +9,7 @@ import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-import org.w3c.dom.css.Rect;
+
 
 public class Main extends Application {
     public static void main(String[] args) {
