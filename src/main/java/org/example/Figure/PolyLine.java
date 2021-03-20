@@ -3,7 +3,10 @@ import javafx.scene.paint.Color;
 import org.example.Figures;
 
 public class PolyLine extends Figures {
+    @Override
+    public void Paint() {
 
+    }
     public PolyLine(int PenSize,Color BrushColor) {
         this.PenSize = PenSize;
         this.BrushColor = BrushColor;

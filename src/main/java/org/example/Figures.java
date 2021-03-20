@@ -7,4 +7,8 @@ public abstract class Figures {
     public Color BrushColor;
     public Color StrokeColor;
 
+
+    public void Paint() {
+
+    }
 }
