@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-10.0" layoutY="-8.0" prefHeight="54.0" prefWidth="1120.0" style="-fx-background-color: gray;">
+         <children>
+            <MenuButton layoutX="13.0" layoutY="12.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="76.0" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="New" />
+                <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save as" />
+              </items>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </MenuButton>
+            <MenuButton layoutX="95.0" layoutY="12.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="77.0" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+               </items>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="45.0" prefHeight="58.0" prefWidth="1103.0" style="-fx-background-color: lightgray;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="207.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/pointer-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="249.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/Line-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="287.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/polyline-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="287.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/circle-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="59.0" layoutX="200.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/octagon-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="21.0" layoutX="249.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" width="29.0" />
+            <Line endX="-84.79998779296875" endY="0.20000457763671875" layoutX="432.0" layoutY="23.0" startX="-100.0" />
+            <Line endX="-103.20001220703125" endY="-2.7999954223632812" layoutX="442.0" layoutY="33.0" startX="-103.20001220703125" startY="-17.99999237060547" />
+            <Button layoutX="207.0" layoutY="39.0" mnemonicParsing="false" opacity="0.51" prefHeight="38.0" prefWidth="38.0" />
+            <Button layoutX="244.0" layoutY="39.0" mnemonicParsing="false" opacity="0.51" prefHeight="38.0" prefWidth="38.0" />
+            <Button layoutX="282.0" layoutY="39.0" mnemonicParsing="false" opacity="0.51" prefHeight="38.0" prefWidth="38.0" />
+            <Button layoutX="244.0" layoutY="3.0" mnemonicParsing="false" opacity="0.51" prefHeight="38.0" prefWidth="38.0" />
+            <Button layoutX="282.0" layoutY="3.0" mnemonicParsing="false" opacity="0.51" prefHeight="38.0" prefWidth="38.0" />
+            <Button layoutX="207.0" layoutY="3.0" mnemonicParsing="false" opacity="0.51" prefHeight="38.0" prefWidth="38.0" />
+            <Line endX="0.4000244140625" endY="-4.999992370605469" layoutX="206.0" layoutY="6.0" startX="0.9999847412109375" startY="71.40000915527344" />
+            <TextField layoutX="8.0" layoutY="29.0" prefHeight="26.0" prefWidth="44.0" promptText="Size" />
+            <Text layoutX="7.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pen Size">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="64.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stroke Color">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="139.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brush Color">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Button layoutX="320.0" layoutY="3.0" mnemonicParsing="false" opacity="0.51" prefHeight="38.0" prefWidth="38.0" />
+            <ColorPicker layoutX="75.0" layoutY="28.0" prefHeight="26.0" prefWidth="38.0">
+               <value>
+                  <Color />
+               </value>
+            </ColorPicker>
+            <ColorPicker layoutX="144.0" layoutY="28.0" prefHeight="26.0" prefWidth="38.0">
+               <value>
+                  <Color />
+               </value>
+            </ColorPicker>
+            <Line endX="0.4000244140625" endY="-4.999992370605469" layoutX="57.0" layoutY="8.0" startX="0.40001678466796875" startY="67.79999542236328" />
+            <Line endX="5.8000030517578125" endY="-13.999996185302734" layoutX="130.0" layoutY="14.0" startX="5.8000030517578125" startY="65.19999694824219" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="121.0" prefHeight="583.0" prefWidth="12.0" style="-fx-background-color: lightgray;" />
+      <AnchorPane layoutX="6.0" layoutY="688.0" prefHeight="12.0" prefWidth="1102.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Line endX="-91.20000457763672" layoutX="96.0" layoutY="5.0" startX="-100.00000762939453" />
+            <Line endX="-100.00000762939453" endY="10.0" layoutX="100.0" layoutY="-1.0" startX="-100.00000762939453" startY="2.4000244140625" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1093.0" layoutY="110.0" prefHeight="583.0" prefWidth="12.0" style="-fx-background-color: lightgray;" />
+   </children>
+</AnchorPane>
