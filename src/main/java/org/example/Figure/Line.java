@@ -1,13 +1,26 @@
 package org.example.Figure;
-import javafx.scene.paint.Color;
 import org.example.Figures;
-public class Line extends Figures {
-    @Override
-    public void Paint() {
+import javafx.geometry.Point2D;
+import javafx.scene.canvas.GraphicsContext;
 
+public class Line extends Figures {
+    private Point2D startPoint,lastPoint;
+
+    public Line(GraphicsContext gc,Point2D startPoint){
+        super(gc);
+        polyFigure=false;
+        this.startPoint=startPoint;
+        this.lastPoint=startPoint;
+        polyFigure=false;
     }
-    public Line(int PenSize,Color BrushColor) {
-        this.PenSize = PenSize;
-        this.BrushColor = BrushColor;
+    @Override
+    public void paint(GraphicsContext gc){
+        figureStyle(gc);
+        gc.strokeLine(startPoint.getX(),startPoint.getY(),lastPoint.getX(),lastPoint.getY());
+    }
+
+    @Override
+    public void saveLastPoint(Point2D newPoint) {
+        this.lastPoint = newPoint;
     }
 }
